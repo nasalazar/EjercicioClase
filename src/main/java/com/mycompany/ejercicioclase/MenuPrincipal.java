@@ -112,11 +112,11 @@ public class MenuPrincipal {
          
          System.out.println("LISTA GENERAL");
          
-         for(Programa totalP : listaPrograma){
+         for(Programa totalP : listaPrograma){ //for que va hasta la lista
              System.out.println(totalP.getNombrePrograma());
-             for (Materia totalM : totalP.getMaterias()){
+             for (Materia totalM : totalP.getMaterias()){  // for que va hasta las materias
                  System.out.println(" "+totalM.getNombreMateria());
-                 for (Alumno totalA : totalM.getEstudiantes()){
+                 for (Alumno totalA : totalM.getEstudiantes()){ // for que va hasta los estudiantes
                      System.out.println(" "+totalA.getNombre());
                  
                  }
